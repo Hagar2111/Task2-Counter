@@ -1,6 +1,7 @@
 let displayNum = document.querySelector('.display');
 let minus = document.querySelector('.minus');
 let plus = document.querySelector('.plus');
+let reset = document.querySelector('.reset');
 
 let count = 0;
 
@@ -13,6 +14,11 @@ plus.addEventListener("click",()=>{
 
 minus.addEventListener("click",()=>{
     count--;
+    updateNum();
+});
+
+reset.addEventListener("click", ()=>{
+    count = 0;
     updateNum();
 });
 
